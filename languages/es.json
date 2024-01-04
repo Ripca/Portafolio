@@ -1,6 +1,42 @@
 {
     "profile": {
         "rol": "Desarrollador",
-        "description": "Desarrollador junior en el área del front-end y entrando tambien al desarrollo de back-end. Buscando especializarme en las tecnologias que ya conozco y mejorar cada dia."
+        "description": "Desarrollador junior en el área del Frontend y entrando también al desarrollo de Backend. <br />Busco especializarme en las tecnologías que ya conozco y mejorar cada dia."
+    },
+    "achievements": {
+        "achievement-title": "Logros",
+        "achievement-1-date": "Mayo 2023",
+        "achievement-1-description": "Participación en la Competencia Nacional de Microsoft Office Specialist 2023 en la categoría de Microsoft Word."
+    },
+    "interests": {
+        "interests-title": "Intereses",
+        "interest-1": "Tecnología",
+        "interest-2": "Lectura",
+        "interest-3": "Deportes"
+    },
+    "skills_levels": {
+        "begginer-level": "Inicial",
+        "intermediate-level": "Medio",
+        "advanced-level": "Avanzado"
+    },
+
+    "other__knowledge": {
+        "other__knowledge__title": "Otros Conocimientos"
+    },
+    "projects": {
+        "projects__title": "Proyectos",
+        "project-1-title": "Tres en Raya",
+        "project-1-description": "Página para poder jugar tres en raya, cuenta con 3 tableros y se puede jugar en teléfonos.",
+        "project-2-title": "MoviesR",
+        "project-2-description": " Página para ver las películas de tendencia.",
+        "project-3-title": "CRUD",
+        "project-3-description": "Página para hacer un CRUD utilizando la API IndexedDB del navegador",
+        "project-4-title": "Galería",
+        "project-4-description": "Sitio tipo galería.",
+        "project-5-title": "Portafolio",
+        "project-5-description": "Mi portafolio web, con algunos proyectos y mi informacion de contacto."
+    },
+    "button": {
+        "code_button": "Código"
     }
 }

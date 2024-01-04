@@ -161,13 +161,16 @@ header {
 }
 
 .card__image-container {
-    min-width: 250px;
+    display: flex;
+    min-width: 280px;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
 
 .card__image--profile {
+    border: 3px solid var(--primary-color);
     border-radius: 50%;
+    transition: var(--transition);
 }
 
 .card__header {
@@ -197,6 +200,10 @@ header {
 
 .card__link {
     margin-bottom: 0.6em;
+}
+
+.card__link i {
+    margin-right: 0.7em;
 }
 
 .card__text {
@@ -376,7 +383,7 @@ header {
     transition: var(--transition);
 }
 
-@media screen and(minwidth:760px) {
+@media screen and (min-width: 760px) {
     .experience {
         background: linear-gradient(
             135deg,

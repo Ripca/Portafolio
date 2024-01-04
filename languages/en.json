@@ -1,6 +1,42 @@
 {
     "profile": {
         "rol": "Developer",
-        "description": "Junior developer in the front-end area and also entering back-end development. Looking to specialize in the technologies that I already know and improve every day."
+        "description": "Junior developer in the Frontend area and entering also to Backend development. <br />I am looking to specialize in the technologies that I already know and improve every day."
+    },
+    "achievements": {
+        "achievement-title": "Achievements",
+        "achievement-1-date": "May 2023",
+        "achievement-1-description": "Participation in the 2023 Microsoft Office Specialist National Competition in the Microsoft Word category."
+    },
+    "interests": {
+        "interests-title": "Interests",
+        "interest-1": "Technology",
+        "interest-2": "Lecture",
+        "interest-3": "Sports"
+    },
+    "skills_levels": {
+        "begginer-level": "Initial",
+        "intermediate-level": "Intermediate",
+        "advanced-level": "Advanced"
+    },
+
+    "other__knowledge": {
+        "other__knowledge__title": "Other Knowledge"
+    },
+    "projects": {
+        "projects__title": "Projects",
+        "project-1-title": "Tic-tac-toe",
+        "project-1-description": "Page to play tic-tac-toe, it has three boards and you can play on your mobile.",
+        "project-2-title": "MoviesR",
+        "project-2-description": "Page to see what are the trending movies.",
+        "project-3-title": "CRUD",
+        "project-3-description": "Page to make a CRUD using the IndexedDB API of the browser.",
+        "project-4-title": "Gallery",
+        "project-4-description": "Gallery type website.",
+        "project-5-title": "Portfolio",
+        "project-5-description": "My web portfolio, with some projects and my contact information."
+    },
+    "button": {
+        "code_button": "Code"
     }
 }

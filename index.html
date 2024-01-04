@@ -46,7 +46,7 @@
                         <img
                             class="card__image--profile"
                             src="https://phandroid.com/wp-content/uploads/2019/04/essential_built_in_wallpaper_1-350x350.jpg"
-                            alt=""
+                            alt="ProfileImage"
                         />
                     </div>
                     <div class="card__header">
@@ -67,64 +67,95 @@
                     <div class="card__body">
                         <div class="card__link">
                             <i class="fas fa-envelope icon"></i>
-                            <a href="ricardoarrecisrivera@gmail.com">ricardo@gmail.com</a>
+                            <a href="ricardoarrecisrivera@gmail.com"
+                                >ricardoarrecisrivera@gmail.com</a
+                            >
                         </div>
                         <div class="card__link">
                             <i class="fas fa-phone-alt icon"></i>
-                            <a href="tel:12123123213">+502-123123123</a>
+                            <a href="tel:55945635">+502 5594-5635</a>
+                        </div>
+                        <div class="card__link">
+                            <i class="fas fa-solid fa-location-dot"></i>
+                            <a>Guatemala,Guatemala</a>
                         </div>
                         <p
                             class="card__text"
                             data-section="profile"
                             data-value="description"
                         >
-                            Desarrollador junior en el área del front-end y entrando
-                            tambien al desarrollo de back-end. Buscando especializarme en
-                            las tecnologias que ya conozco y mejorar cada dia.
+                            Desarrollador junior en el área del Frontend y entrando
+                            tambien al desarrollo de Backend. <br />Busco especializarme
+                            en las tecnologías que ya conozco y mejorar cada dia.
                         </p>
                     </div>
                 </article>
                 <article class="card card--experience">
-                    <h2 class="card__title">Logros</h2>
+                    <h2
+                        class="card__title"
+                        data-section="achievements"
+                        data-value="achievement-title"
+                    >
+                        Logros
+                    </h2>
                     <div class="experience">
                         <div class="experience__info">
-                            <p class="experience__time">May 2023</p>
+                            <p
+                                class="experience__time"
+                                data-section="achievements"
+                                data-value="achievement-1-date"
+                            >
+                                Mayo 2023
+                            </p>
                             <!-- cambiar luego el css con las cosas que no tengan sentido como las flags y esto de abajo -->
                             <h3 class="experience__job">Microsoft</h3>
-                            <p class="experience__description">
-                                Participación en la Competencia Nacional Microsoft Office
-                                Specialist 2023 en la categoría de Microsoft Word.
+                            <p
+                                class="experience__description"
+                                data-section="achievements"
+                                data-value="achievement-1-description"
+                            >
+                                Participación en la Competencia Nacional de Microsoft
+                                Office Specialist 2023 en la categoría de Microsoft Word.
                             </p>
                         </div>
                     </div>
                 </article>
 
                 <article class="card card--experience">
-                    <h2 class="card__title">Logros</h2>
-                    <div class="experience">
-                        <div class="experience__info">
-                            <p class="experience__time">May 2023</p>
-                            <!-- cambiar luego el css con las cosas que no tengan sentido como las flags y esto de abajo -->
-                            <h3 class="experience__job">Microsoft</h3>
-                            <p class="experience__description">
-                                Participación en la Competencia Nacional Microsoft Office
-                                Specialist 2023 en la categoría de Microsoft Word.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <!-- 
-                <article class="card card--experience">
-                    <h2 class="card__title">Intereses</h2>
+                    <h2
+                        class="card__title"
+                        data-section="interests"
+                        data-value="interests-title"
+                    >
+                        Intereses
+                    </h2>
 
                     <div class="experience">
                         <ul>
-                            <li class="experience__description">Tecnologia</li>
-                            <li class="experience__description">Lectura</li>
-                            <li class="experience__description">Baloncesto</li>
+                            <li
+                                class="experience__description"
+                                data-section="interests"
+                                data-value="interest-1"
+                            >
+                                Tecnología
+                            </li>
+                            <li
+                                class="experience__description"
+                                data-section="interests"
+                                data-value="interest-2"
+                            >
+                                Lectura
+                            </li>
+                            <li
+                                class="experience__description"
+                                data-section="interests"
+                                data-value="interest-3"
+                            >
+                                Deportes
+                            </li>
                         </ul>
                     </div>
-                </article> -->
+                </article>
             </section>
 
             <section class="column column--right">
@@ -132,9 +163,24 @@
                     <h2 class="card__title">Front End</h2>
                     <div class="skills">
                         <div class="skills__header">
-                            <small class="skills__level">Inicial</small>
-                            <small class="skills__level">Medio</small>
-                            <small class="skills__level">Avanzado</small>
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="begginer-level"
+                                >Inicial</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="intermediate-level"
+                                >Medio</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="advanced-level"
+                                >Avanzado</small
+                            >
                         </div>
                         <div class="skills__item">
                             <p class="skills__tech">HTML</p>
@@ -155,9 +201,24 @@
                     <h2 class="card__title">Back End</h2>
                     <div class="skills">
                         <div class="skills__header">
-                            <small class="skills__level">Inicial</small>
-                            <small class="skills__level">Medio</small>
-                            <small class="skills__level">Avanzado</small>
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="begginer-level"
+                                >Inicial</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="intermediate-level"
+                                >Medio</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="advanced-level"
+                                >Avanzado</small
+                            >
                         </div>
                         <div class="skills__item">
                             <p class="skills__tech">JAVA</p>
@@ -174,12 +235,33 @@
                     </div>
                 </article>
                 <article class="card">
-                    <h2 class="card__title">Otros Conocimientos</h2>
+                    <h2
+                        class="card__title"
+                        data-section="other__knowledge"
+                        data-value="other__knowledge__title"
+                    >
+                        Otros Conocimientos
+                    </h2>
                     <div class="skills">
                         <div class="skills__header">
-                            <small class="skills__level">Inicial</small>
-                            <small class="skills__level">Medio</small>
-                            <small class="skills__level">Avanzado</small>
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="begginer-level"
+                                >Inicial</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="intermediate-level"
+                                >Medio</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="advanced-level"
+                                >Avanzado</small
+                            >
                         </div>
                         <div class="skills__item">
                             <p class="skills__tech">INGLÉS</p>
@@ -200,14 +282,12 @@
                     </div>
                 </article>
 
-                <h2 class="titles">Proyectos</h2>
+                <h2 class="titles" data-section="projects" data-value="projects__title">
+                    Proyectos
+                </h2>
                 <article class="card card--project">
                     <div class="card__image-container">
-                        <img
-                            class="card__img"
-                            src="/assets/images/TresEnRayaApp.png"
-                            alt="landing-page"
-                        />
+                        <img src="/assets/images/TresEnRayaApp.png" alt="TresEnRaya" />
                     </div>
                     <div class="project">
                         <div class="project__tags">
@@ -217,9 +297,18 @@
                             <span class="project__tag">#Responsive</span>
                             <span class="project__tag">#API</span>
                         </div>
-                        <!-- Cambiar el texto tiptap toe -->
-                        <h2 class="card__title">TresEnRaya</h2>
-                        <p class="card__text">
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-1-title"
+                        >
+                            Tres en Raya
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-1-description"
+                        >
                             Página para poder jugar tres en raya, cuenta con 3 tableros y
                             se puede jugar en teléfonos.
                         </p>
@@ -234,7 +323,9 @@
                                 href="https://github.com/Ripca/TresEnRaya"
                                 class="button button--ghost"
                                 target="_blank"
-                                >Code</a
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
                             >
                         </div>
                     </div>
@@ -294,8 +385,18 @@
                             <span class="project__tag">#Responsive</span>
                             <span class="project__tag">#API</span>
                         </div>
-                        <h2 class="card__title">MoviesR</h2>
-                        <p class="card__text">
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-2-title"
+                        >
+                            MoviesR
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-2-description"
+                        >
                             Página para ver las películas de tendencia
                         </p>
                         <div class="buttons">
@@ -309,38 +410,9 @@
                                 target="_blank"
                                 href="https://github.com/Ripca/MoviesR"
                                 class="button button--ghost"
-                                >Code</a
-                            >
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card card--project">
-                    <div class="card__image-container">
-                        <img
-                            class="card__img"
-                            src="assets/images/GalleryApp.png"
-                            alt="landing-page"
-                        />
-                    </div>
-                    <div class="project">
-                        <div class="project__tags">
-                            <span class="project__tag">#HTML</span>
-                            <span class="project__tag">#CSS</span>
-                            <span class="project__tag">#JAVASCRIPT</span>
-                            <span class="project__tag">#Responsive</span>
-                        </div>
-                        <h2 class="card__title">Gallery</h2>
-                        <p class="card__text">Página tipo galería</p>
-                        <div class="buttons">
-                            <a href="#" target="_blank" class="button button--primary"
-                                >Demo</a
-                            >
-                            <a
-                                target="_blank"
-                                href="https://github.com/Ripca/Gallery"
-                                class="button button--ghost"
-                                >Code</a
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
                             >
                         </div>
                     </div>
@@ -351,7 +423,7 @@
                         <img
                             class="card__img"
                             src="assets/images/CrudApp.png"
-                            alt="landing-page"
+                            alt="crud-image"
                         />
                     </div>
                     <div class="project">
@@ -361,8 +433,18 @@
                             <span class="project__tag">#JAVASCRIPT</span>
                             <span class="project__tag">#INDEXEDDB</span>
                         </div>
-                        <h2 class="card__title">CRUD</h2>
-                        <p class="card__text">
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-3-title"
+                        >
+                            CRUD
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-3-description"
+                        >
                             Página para hacer un CRUD utilizando la API IndexedDB del
                             navegador
                         </p>
@@ -377,11 +459,101 @@
                                 target="_blank"
                                 href="https://github.com/Ripca/CRUD"
                                 class="button button--ghost"
-                                >Code</a
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
                             >
                         </div>
                     </div>
                 </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="assets/images/GalleryApp.png"
+                            alt="galería"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-4-title"
+                        >
+                            Galería
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-4-description"
+                        >
+                            Sitio tipo galería
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/Gallery"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="assets/images/PortafolioApp.PNG"
+                            alt="galería"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-5-title"
+                        >
+                            Portafolio
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-5-description"
+                        >
+                            Mi portafolio web, con algunos proyectos y mi informacion de
+                            contacto
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/Portafolio"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
                 <!-- 
                 <article class="card card--project">
                     <div class="card__image-container">
