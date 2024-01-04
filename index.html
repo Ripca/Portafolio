@@ -3,7 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+        "
+        />
         <link rel="stylesheet" href="styles.css" />
+
         <title>Document</title>
     </head>
     <body class="dark">
@@ -16,16 +22,441 @@
                         class="toggle-theme__icon"
                         id="toggle-icon"
                     />
-                    <p class="toggle-theme__text" id="toggle-text">Dark Mode</p>
+                    <p class="toggle-theme__text" id="toggle-text">Dark</p>
                 </div>
             </div>
+
+            <div id="flags" class="flags">
+                <i class="fas fa-thin fa-globe"></i>
+                <div class="flags__item" data-language="es">es</div>
+                <div class="flags__item" data-language="en">en</div>
+            </div>
+
             <div class="colors" id="toggle-colors">
                 <div data-color="#3182ed" class="colors__item colors__item--blue"></div>
-                <div data-color="#31ed8f" class="colors__item colors__item--green"></div>
+                <div data-color="#28e285" class="colors__item colors__item--green"></div>
                 <div data-color="#a231ed" class="colors__item colors__item--purple"></div>
-                <div data-color="#edc131" class="colors__item colors__item--orange"></div>
             </div>
         </header>
+        <main class="main">
+            <section class="column column--left">
+                <!-- Profile-Card -->
+                <article class="card card--profile">
+                    <div class="card__image-container">
+                        <img
+                            class="card__image--profile"
+                            src="https://phandroid.com/wp-content/uploads/2019/04/essential_built_in_wallpaper_1-350x350.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card__header">
+                        <h2 class="card__title no__margin">Ricardo Arrecis</h2>
+                        <div class="card__subtitle__container">
+                            <p
+                                class="card__subtitle"
+                                data-section="profile"
+                                data-value="rol"
+                            >
+                                Desarrollador
+                            </p>
+                            <a href="#" class="button button--primary" target="_blank"
+                                >CV</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__link">
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="ricardoarrecisrivera@gmail.com">ricardo@gmail.com</a>
+                        </div>
+                        <div class="card__link">
+                            <i class="fas fa-phone-alt icon"></i>
+                            <a href="tel:12123123213">+502-123123123</a>
+                        </div>
+                        <p
+                            class="card__text"
+                            data-section="profile"
+                            data-value="description"
+                        >
+                            Desarrollador junior en el área del front-end y entrando
+                            tambien al desarrollo de back-end. Buscando especializarme en
+                            las tecnologias que ya conozco y mejorar cada dia.
+                        </p>
+                    </div>
+                </article>
+                <article class="card card--experience">
+                    <h2 class="card__title">Logros</h2>
+                    <div class="experience">
+                        <div class="experience__info">
+                            <p class="experience__time">May 2023</p>
+                            <!-- cambiar luego el css con las cosas que no tengan sentido como las flags y esto de abajo -->
+                            <h3 class="experience__job">Microsoft</h3>
+                            <p class="experience__description">
+                                Participación en la Competencia Nacional Microsoft Office
+                                Specialist 2023 en la categoría de Microsoft Word.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--experience">
+                    <h2 class="card__title">Logros</h2>
+                    <div class="experience">
+                        <div class="experience__info">
+                            <p class="experience__time">May 2023</p>
+                            <!-- cambiar luego el css con las cosas que no tengan sentido como las flags y esto de abajo -->
+                            <h3 class="experience__job">Microsoft</h3>
+                            <p class="experience__description">
+                                Participación en la Competencia Nacional Microsoft Office
+                                Specialist 2023 en la categoría de Microsoft Word.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- 
+                <article class="card card--experience">
+                    <h2 class="card__title">Intereses</h2>
+
+                    <div class="experience">
+                        <ul>
+                            <li class="experience__description">Tecnologia</li>
+                            <li class="experience__description">Lectura</li>
+                            <li class="experience__description">Baloncesto</li>
+                        </ul>
+                    </div>
+                </article> -->
+            </section>
+
+            <section class="column column--right">
+                <article class="card">
+                    <h2 class="card__title">Front End</h2>
+                    <div class="skills">
+                        <div class="skills__header">
+                            <small class="skills__level">Inicial</small>
+                            <small class="skills__level">Medio</small>
+                            <small class="skills__level">Avanzado</small>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">HTML</p>
+                            <div class="skills__bar skills__bar--60"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">CSS</p>
+                            <div class="skills__bar skills__bar--50"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JAVASCRIPT</p>
+                            <div class="skills__bar skills__bar--40"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">Back End</h2>
+                    <div class="skills">
+                        <div class="skills__header">
+                            <small class="skills__level">Inicial</small>
+                            <small class="skills__level">Medio</small>
+                            <small class="skills__level">Avanzado</small>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JAVA</p>
+                            <div class="skills__bar skills__bar--50"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JPA</p>
+                            <div class="skills__bar skills__bar--40"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">MYSQL</p>
+                            <div class="skills__bar skills__bar--30"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <h2 class="card__title">Otros Conocimientos</h2>
+                    <div class="skills">
+                        <div class="skills__header">
+                            <small class="skills__level">Inicial</small>
+                            <small class="skills__level">Medio</small>
+                            <small class="skills__level">Avanzado</small>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">INGLÉS</p>
+                            <div class="skills__bar skills__bar--60"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JSP</p>
+                            <div class="skills__bar skills__bar--40"></div>
+                        </div>
+                        <!-- <div class="skills__item">
+                            <p class="skills__tech">C#</p>
+                            <div class="skills__bar skills__bar--30"></div>
+                        </div> -->
+                        <div class="skills__item">
+                            <p class="skills__tech">WORD</p>
+                            <div class="skills__bar skills__bar--70"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <h2 class="titles">Proyectos</h2>
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="/assets/images/TresEnRayaApp.png"
+                            alt="landing-page"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                            <span class="project__tag">#API</span>
+                        </div>
+                        <!-- Cambiar el texto tiptap toe -->
+                        <h2 class="card__title">TresEnRaya</h2>
+                        <p class="card__text">
+                            Página para poder jugar tres en raya, cuenta con 3 tableros y
+                            se puede jugar en teléfonos.
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://tres-en-raya-responsive.netlify.app/"
+                                class="button button--primary"
+                                target="_blank"
+                                >Demo</a
+                            >
+                            <a
+                                href="https://github.com/Ripca/TresEnRaya"
+                                class="button button--ghost"
+                                target="_blank"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <!-- <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="/assets/images/TresEnRayaApp.png"
+                            alt="landing-page"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                            <span class="project__tag">#API</span>
+                        </div>
+                        <h2 class="card__title">TresEnRaya</h2>
+                        <p class="card__text">
+                            Página para poder jugar tres en raya, cuenta con 3 tableros y
+                            se puede jugar en teléfonos.
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://tres-en-raya-responsive.netlify.app/"
+                                class="button button--primary"
+                                target="_blank"
+                                >Demo</a
+                            >
+                            <a
+                                href="https://github.com/Ripca/TresEnRaya"
+                                class="button button--ghost"
+                                target="_blank"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                </article> -->
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="/assets/images/MoviesRapp.png"
+                            alt="MoviesR"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                            <span class="project__tag">#API</span>
+                        </div>
+                        <h2 class="card__title">MoviesR</h2>
+                        <p class="card__text">
+                            Página para ver las películas de tendencia
+                        </p>
+                        <div class="buttons">
+                            <a
+                                target="_blank"
+                                href="https://moviesr.netlify.app/"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/MoviesR"
+                                class="button button--ghost"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="assets/images/GalleryApp.png"
+                            alt="landing-page"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2 class="card__title">Gallery</h2>
+                        <p class="card__text">Página tipo galería</p>
+                        <div class="buttons">
+                            <a href="#" target="_blank" class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/Gallery"
+                                class="button button--ghost"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="assets/images/CrudApp.png"
+                            alt="landing-page"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#INDEXEDDB</span>
+                        </div>
+                        <h2 class="card__title">CRUD</h2>
+                        <p class="card__text">
+                            Página para hacer un CRUD utilizando la API IndexedDB del
+                            navegador
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://crudindexeddb.netlify.app/"
+                                target="_blank"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/CRUD"
+                                class="button button--ghost"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                </article>
+                <!-- 
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="assets/images/CrudApp.png"
+                            alt="landing-page"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#INDEXEDDB</span>
+                        </div>
+                        <h2 class="card__title">CRUD</h2>
+                        <p class="card__text">
+                            Página para hacer un CRUD utilizando la API IndexedDB del
+                            navegador
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://crudindexeddb.netlify.app/"
+                                target="_blank"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/CRUD"
+                                class="button button--ghost"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                </article>
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            class="card__img"
+                            src="assets/images/CrudApp.png"
+                            alt="landing-page"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#INDEXEDDB</span>
+                        </div>
+                        <h2 class="card__title">CRUD</h2>
+                        <p class="card__text">
+                            Página para hacer un CRUD utilizando la API IndexedDB del
+                            navegador
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://crudindexeddb.netlify.app/"
+                                target="_blank"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/CRUD"
+                                class="button button--ghost"
+                                >Code</a
+                            >
+                        </div>
+                    </div>
+                </article> -->
+            </section>
+        </main>
 
         <script src="scripts.js"></script>
     </body>
