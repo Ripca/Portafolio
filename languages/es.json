@@ -21,7 +21,8 @@
     },
 
     "other__knowledge": {
-        "other__knowledge__title": "Otros Conocimientos"
+        "other__knowledge__title": "Otros Conocimientos",
+        "english": "INGLÉS"
     },
     "projects": {
         "projects__title": "Proyectos",

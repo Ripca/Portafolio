@@ -11,7 +11,7 @@
     "interests": {
         "interests-title": "Interests",
         "interest-1": "Technology",
-        "interest-2": "Lecture",
+        "interest-2": "Reading",
         "interest-3": "Sports"
     },
     "skills_levels": {
@@ -21,7 +21,8 @@
     },
 
     "other__knowledge": {
-        "other__knowledge__title": "Other Knowledge"
+        "other__knowledge__title": "Other Knowledge",
+        "english": "ENGLISH"
     },
     "projects": {
         "projects__title": "Projects",
