@@ -40,7 +40,7 @@
         </header>
         <main class="main">
             <section class="column column--left">
-                <article class="card card--profile">
+                <article class="card card--profile relative">
                     <div class="card__image-container">
                         <img
                             class="card__image--profile"
@@ -83,10 +83,36 @@
                             data-section="profile"
                             data-value="description"
                         >
-                            Desarrollador junior en el área del Frontend y entrando
+                            Soy un desarrollador junior en el área del Frontend y entrando
                             tambien al desarrollo de Backend. <br />Busco especializarme
                             en las tecnologías que ya conozco y mejorar cada dia.
                         </p>
+                        <div class="container__social">
+                            <div class="social">
+                                <div class="social__icon">
+                                    <a href="https://github.com/Ripca" target="_blank">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                    <a href="https://github.com/Ripca" target="_blank">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                </div>
+                                <div class="social__icon">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/ricardo-arrecis-rivera-b28a4a253/"
+                                    >
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/ricardo-arrecis-rivera-b28a4a253/"
+                                    >
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <article class="card card--experience">
@@ -155,6 +181,19 @@
                         </ul>
                     </div>
                 </article>
+
+                <!-- Talvez aqui lo de social -->
+                <!-- <article class="card card--experience">
+                    <h2
+                        class="card__title"
+                        data-section="interests"
+                        data-value="interests-title"
+                    >
+                        Social
+                    </h2>
+
+                    <div class="experience"></div>
+                </article> -->
             </section>
 
             <section class="column column--right">
@@ -495,7 +534,12 @@
                             contacto
                         </p>
                         <div class="buttons">
-                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                href="https://ricardoarrecisportfolio.netlify.app/"
+                                target="_blank"
+                                class="button button--primary"
+                                >Demo</a
+                            >
                             <a
                                 target="_blank"
                                 href="https://github.com/Ripca/Portafolio"
@@ -507,17 +551,83 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="card card--project">
-                    <div class="container__social">
-                        <div class="social">
-                            <div class="social__icon">
-                                <i class="fab fa-github-square"></i
-                                ><i class="fab fa-github-square"></i>
-                            </div>
-                            <div class="social__icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
+                    <div class="card__image-container">
+                        <img src="assets/images/MenuGrastronomicoApp.png" alt="galería" />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">C#</span>
+
+                            <span class="project__tag">Windows Forms</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-6-title"
+                        >
+                            Menú Gastronómico
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-6-description"
+                        >
+                            Mini proyecto elaborado en C# utilizando Windows forms que
+                            presenta tres menus y las comidas dependiendo del tiempo
+                            seleccionado.
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/MenuGastronomico"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img src="assets/images/MenuGrastronomicoApp.png" alt="galería" />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">C#</span>
+
+                            <span class="project__tag">Windows Forms</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-6-title"
+                        >
+                            Menú Gastronómico
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-6-description"
+                        >
+                            Mini proyecto elaborado en C# utilizando Windows forms que
+                            presenta tres menus y las comidas dependiendo del tiempo
+                            seleccionado.
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/MenuGrastronomico"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
                         </div>
                     </div>
                 </article>

@@ -93,6 +93,7 @@ header {
 /* Se le coloca el color que sea el principal y un filter: brightness, para hacerlo mas claro*/
 .flags__item:hover {
     background-color: var(--primary-color);
+    color: #fafafa;
     filter: brightness(0.9);
 }
 
@@ -152,8 +153,11 @@ header {
 @media screen and (min-width: 760px) {
     .column--right {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, min-content);
         align-items: start;
+    }
+
+    .column--left {
+        gap: 3em;
     }
 }
 /* Estilos generales para todas las cartas */
@@ -163,6 +167,7 @@ header {
     border-radius: var(--border-radius);
 }
 
+/* Para luego centrar el contenido de las cartas expertise TODO */
 /* .card--experience {
     display: flex;
     flex-direction: column;
@@ -255,7 +260,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.3em;
 }
 
 .skills__tech {
@@ -431,33 +436,21 @@ header {
     margin-bottom: 1.5em;
 }
 
-/* .footer{
-    display: block;
-    bottom: 0;
-} */
-
 .container__social {
-    height: 200px;
     position: relative;
+    height: 100px;
 }
 
 .social {
-    color: var(--text-color);
     position: absolute;
     bottom: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 2.9em;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
-    width: 30%;
-}
-
-@media screen and (min-width: 1024px) {
-    .social {
-        width: 10%;
-    }
+    width: 60%;
 }
 
 .social__icon {
@@ -467,14 +460,14 @@ header {
     cursor: pointer;
     transition: transform 0.3s;
 }
-.social__icon i {
+
+.social__icon a i {
+    color: var(--text-color);
     align-self: center;
 }
-@media screen and (min-width: 1024px) {
+
+@media screen and (min-width: 760px) {
     .social__icon:hover {
-        transform: translateY(-100%);
-    }
-    .social__icon:hover i:nth-child(2) {
-        color: var(--primary-color);
+        transform: translateY(-122%);
     }
 }

@@ -1,7 +1,7 @@
 {
     "profile": {
         "rol": "Desarrollador",
-        "description": "Desarrollador junior en el área del Frontend y entrando también al desarrollo de Backend. <br />Busco especializarme en las tecnologías que ya conozco y mejorar cada dia."
+        "description": "Soy un desarrollador junior en el área del Frontend y entrando también al desarrollo de Backend. <br />Busco especializarme en las tecnologías que ya conozco y mejorar cada dia."
     },
     "achievements": {
         "achievement-title": "Logros",
@@ -35,7 +35,9 @@
         "project-4-title": "Galería",
         "project-4-description": "Sitio tipo galería.",
         "project-5-title": "Portafolio",
-        "project-5-description": "Mi portafolio web, con algunos proyectos y mi informacion de contacto."
+        "project-5-description": "Mi portafolio web, con algunos proyectos y mi informacion de contacto.",
+        "project-6-title": "Menú Gastronómico",
+        "project-6-description": "Mini proyecto elaborado en C# utilizando windows forms que presenta tres menus y las comidas dependiendo del tiempo seleccionado."
     },
     "button": {
         "code_button": "Código"
