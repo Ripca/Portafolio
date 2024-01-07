@@ -8,6 +8,12 @@
         "achievement-1-date": "Mayo 2023",
         "achievement-1-description": "Participación en la Competencia Nacional de Microsoft Office Specialist 2023 en la categoría de Microsoft Word."
     },
+    "education": {
+        "education-title": "Educación",
+        "education-subtitle": "Ingeniería",
+        "education-description": "Estudiante del primer año de Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala."
+    },
+
     "interests": {
         "interests-title": "Intereses",
         "interest-1": "Tecnología",
@@ -37,7 +43,9 @@
         "project-5-title": "Portafolio",
         "project-5-description": "Mi portafolio web, con algunos proyectos y mi informacion de contacto.",
         "project-6-title": "Menú Gastronómico",
-        "project-6-description": "Mini proyecto elaborado en C# utilizando windows forms que presenta tres menus y las comidas dependiendo del tiempo seleccionado."
+        "project-6-description": "Mini proyecto elaborado en C# utilizando windows forms que presenta tres menus y las comidas dependiendo del tiempo seleccionado.",
+        "project-7-title": "Consultorio Dental",
+        "project-7-description": "Página tipo Sistema de Gestión para ver, modificar, eliminar o agregar usuarios, se conecta a una base de datos mediante servlets y JPA."
     },
     "button": {
         "code_button": "Código"

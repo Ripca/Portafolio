@@ -162,6 +162,7 @@ header {
 }
 /* Estilos generales para todas las cartas */
 .card {
+    max-height: 750px;
     padding: 1em;
     background-color: var(--bg-card-color);
     border-radius: var(--border-radius);
@@ -185,6 +186,7 @@ header {
     min-width: 280px;
     border-radius: var(--border-radius);
     overflow: hidden;
+    display: flex;
 }
 
 /* Aqui utilizamos el modificador profile para poder darle un estilo unico a la imagen del perfil */
@@ -424,7 +426,7 @@ header {
     margin-bottom: 0.5em;
 }
 
-.experience__job {
+.experience__title {
     margin: 0;
     margin-bottom: 0.5em;
     color: var(--primary-color);
