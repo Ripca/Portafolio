@@ -44,7 +44,9 @@
         "project-6-title": "Gastronomic Menu",
         "project-6-description": "Mini project made in C# using Windows forms that present three menus and meals depending on the selected time.",
         "project-7-title": "Dental Office",
-        "project-7-description": "Management System type page to view, modify, delete or add users, it connects to a database using servlets and JPA."
+        "project-7-description": "Management System type page to view, modify, delete or add users, it connects to a database using servlets and JPA.",
+        "project-8-title": "BMI Calculator",
+        "project-8-description": "Calculator that shows a person's body mass index and whether they are healthy or not."
     },
     "button": {
         "code_button": "Code"

@@ -45,7 +45,9 @@
         "project-6-title": "Menú Gastronómico",
         "project-6-description": "Mini proyecto elaborado en C# utilizando windows forms que presenta tres menus y las comidas dependiendo del tiempo seleccionado.",
         "project-7-title": "Consultorio Dental",
-        "project-7-description": "Página tipo Sistema de Gestión para ver, modificar, eliminar o agregar usuarios, se conecta a una base de datos mediante servlets y JPA."
+        "project-7-description": "Página tipo Sistema de Gestión para ver, modificar, eliminar o agregar usuarios, se conecta a una base de datos mediante servlets y JPA.",
+        "project-8-title": "Calculadora IMC",
+        "project-8-description": "Calculadora que muestra el indice de masa corporal de una persona y si es saludable o no."
     },
     "button": {
         "code_button": "Código"
