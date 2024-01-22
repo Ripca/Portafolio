@@ -6,6 +6,7 @@ Este es mi portafolio web en donde muestro algunos de mis proyectos, un poco de 
 -   HTML
 -   CSS
 -   JavaScript
+-   JSON
 
 ## Preview
 
