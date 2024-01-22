@@ -42,12 +42,14 @@
         "project-4-description": "Sitio tipo galería.",
         "project-5-title": "Portafolio",
         "project-5-description": "Mi portafolio web, con algunos proyectos y mi informacion de contacto.",
-        "project-6-title": "Menú Gastronómico",
-        "project-6-description": "Mini proyecto elaborado en C# utilizando windows forms que presenta tres menus y las comidas dependiendo del tiempo seleccionado.",
+        "project-6-title": "Sistema Clientes",
+        "project-6-description": "                        Este es un proyecto para gestionar clientes desde una interfaz gráfica hecha con WPF y con Sql Server como base de datos administradora.",
         "project-7-title": "Consultorio Dental",
         "project-7-description": "Página tipo Sistema de Gestión para ver, modificar, eliminar o agregar usuarios, se conecta a una base de datos mediante servlets y JPA.",
         "project-8-title": "Calculadora IMC",
-        "project-8-description": "Calculadora que muestra el indice de masa corporal de una persona y si es saludable o no."
+        "project-8-description": "Calculadora que muestra el indice de masa corporal de una persona y si es saludable o no.",
+        "project-9-title": "Menú Gastronómico",
+        "project-9-description": "Mini proyecto elaborado en C# utilizando windows forms que presenta tres menus y las comidas dependiendo del tiempo seleccionado."
     },
     "button": {
         "code_button": "Código"
