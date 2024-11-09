@@ -1,0 +1,56 @@
+{
+    "profile": {
+        "rol": "Developer",
+        "description": "I'm a junior developer in the Frontend area and entering also to Backend development. <br />I am looking to specialize in the technologies that I already know and improve every day."
+    },
+    "achievements": {
+        "achievement-title": "Achievements",
+        "achievement-1-date": "May 2023",
+        "achievement-1-description": "Participation in the 2023 Microsoft Office Specialist National Competition in the Microsoft Word category."
+    },
+    "education": {
+        "education-title": "Education",
+        "education-subtitle": "Engineering",
+        "education-description": "First year student of Systems Engineering at the Mariano Gálvez University of Guatemala."
+    },
+    "interests": {
+        "interests-title": "Interests",
+        "interest-1": "Technology",
+        "interest-2": "Reading",
+        "interest-3": "Sports"
+    },
+    "skills_levels": {
+        "begginer-level": "Initial",
+        "intermediate-level": "Intermediate",
+        "advanced-level": "Advanced"
+    },
+
+    "other__knowledge": {
+        "other__knowledge__title": "Other Knowledge",
+        "english": "ENGLISH"
+    },
+    "projects": {
+        "projects__title": "Projects",
+        "project-1-title": "Tic-tac-toe",
+        "project-1-description": "Page to play tic-tac-toe, it has three boards and you can play on your mobile.",
+        "project-2-title": "MoviesR",
+        "project-2-description": "Page to see what are the trending movies.",
+        "project-3-title": "CRUD",
+        "project-3-description": "Page to make a CRUD using the IndexedDB API of the browser.",
+        "project-4-title": "Gallery",
+        "project-4-description": "Gallery type website.",
+        "project-5-title": "Portfolio",
+        "project-5-description": "My web portfolio, with some projects and my contact information.",
+        "project-6-title": "Customer System",
+        "project-6-description": "Project to manage clients from a graphical interface made with WPF and with SQL Server as the administrative database.",
+        "project-7-title": "Dental Office",
+        "project-7-description": "Management System type page to view, modify, delete or add users, it connects to a database using servlets and JPA.",
+        "project-8-title": "BMI Calculator",
+        "project-8-description": "Calculator that shows a person's body mass index and whether they are healthy or not.",
+        "project-9-title": "Gastronomic Menu",
+        "project-9-description": "Mini project made in C# using Windows forms that present three menus and meals depending on the selected time."
+    },
+    "button": {
+        "code_button": "Code"
+    }
+}

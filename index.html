@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+        "
+        />
+        <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Portafolio Web</title>
+    </head>
+    <body class="dark">
+        <header class="header">
+            <div class="switches">
+                <div id="toggle-theme" class="toggle-theme">
+                    <img
+                        src="assets/icons/moon.svg"
+                        alt="icon-theme"
+                        class="toggle-theme__icon"
+                        id="toggle-icon"
+                    />
+                    <p class="toggle-theme__text" id="toggle-text">Dark</p>
+                </div>
+            </div>
+
+            <div id="flags" class="flags">
+                <i class="fas fa-thin fa-globe"></i>
+                <div class="flags__item" data-language="es">es</div>
+                <div class="flags__item" data-language="en">en</div>
+            </div>
+
+            <div class="colors" id="toggle-colors">
+                <div data-color="#3182ed" class="colors__item colors__item--blue"></div>
+                <div data-color="#28e285" class="colors__item colors__item--green"></div>
+                <div data-color="#a231ed" class="colors__item colors__item--purple"></div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="column column--left">
+                <article class="card card--profile relative">
+                    <div class="card__image-container">
+                        <img
+                            class="card__image--profile"
+                            src="/assets/images/FotoPerfil.PNG"
+                            alt="ProfileImage"
+                        />
+                    </div>
+                    <div class="card__header">
+                        <h2 class="card__title no__margin">Ricardo Arrecis</h2>
+                        <div class="card__subtitle__container">
+                            <p
+                                class="card__subtitle"
+                                data-section="profile"
+                                data-value="rol"
+                            >
+                                Desarrollador
+                            </p>
+                            <a
+                                href="/assets/CV/CVRicardoArrecisRivera.pdf"
+                                class="button button--primary"
+                                target="_blank"
+                                >CV</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__link">
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="ricardoarrecisrivera@gmail.com"
+                                >ricardoarrecisrivera@gmail.com</a
+                            >
+                        </div>
+                        <div class="card__link">
+                            <i class="fas fa-phone-alt icon"></i>
+                            <a href="tel:55945635">+502 5594-5635</a>
+                        </div>
+                        <div class="card__link">
+                            <i class="fas fa-solid fa-location-dot"></i>
+                            <a>Guatemala,Guatemala</a>
+                        </div>
+                        <p
+                            class="card__text"
+                            data-section="profile"
+                            data-value="description"
+                        >
+                            Soy un desarrollador junior en el área del Frontend y entrando
+                            tambien al desarrollo de Backend. <br />Busco especializarme
+                            en las tecnologías que ya conozco y mejorar cada dia.
+                        </p>
+                        <div class="container__social">
+                            <div class="social">
+                                <div class="social__icon">
+                                    <a>
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                    <a href="https://github.com/Ripca" target="_blank">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                </div>
+                                <div class="social__icon">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/ricardo-arrecis-rivera/"
+                                    >
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/ricardo-arrecis-rivera/"
+                                    >
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card card--experience">
+                    <h2
+                        class="card__title"
+                        data-section="achievements"
+                        data-value="achievement-title"
+                    >
+                        Logros
+                    </h2>
+                    <div class="experience">
+                        <div class="experience__info">
+                            <p
+                                class="experience__time"
+                                data-section="achievements"
+                                data-value="achievement-1-date"
+                            >
+                                Mayo 2023
+                            </p>
+
+                            <h3 class="experience__title">Microsoft</h3>
+                            <p
+                                class="experience__description"
+                                data-section="achievements"
+                                data-value="achievement-1-description"
+                            >
+                                Participación en la Competencia Nacional de Microsoft
+                                Office Specialist 2023 en la categoría de Microsoft Word.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--experience">
+                    <h2
+                        class="card__title"
+                        data-section="education"
+                        data-value="education-title"
+                    >
+                        Educación
+                    </h2>
+                    <div class="experience">
+                        <div class="experience__info">
+                            <h3
+                                class="experience__title"
+                                data-section="education"
+                                data-value="education-subtitle"
+                            >
+                                Ingeniería
+                            </h3>
+                            <p
+                                class="experience__description"
+                                data-section="education"
+                                data-value="education-description"
+                            >
+                                Estudiante del primer año de Ingeniería en Sistemas en la
+                                Universidad Mariano Gálvez de Guatemala.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--experience">
+                    <h2
+                        class="card__title"
+                        data-section="interests"
+                        data-value="interests-title"
+                    >
+                        Intereses
+                    </h2>
+
+                    <div class="experience">
+                        <ul>
+                            <li
+                                class="experience__description"
+                                data-section="interests"
+                                data-value="interest-1"
+                            >
+                                Tecnología
+                            </li>
+                            <li
+                                class="experience__description"
+                                data-section="interests"
+                                data-value="interest-2"
+                            >
+                                Lectura
+                            </li>
+                            <li
+                                class="experience__description"
+                                data-section="interests"
+                                data-value="interest-3"
+                            >
+                                Deportes
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section class="column column--right">
+                <article class="card">
+                    <h2 class="card__title">Front End</h2>
+                    <div class="skills">
+                        <div class="skills__header">
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="begginer-level"
+                                >Inicial</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="intermediate-level"
+                                >Medio</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="advanced-level"
+                                >Avanzado</small
+                            >
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">HTML</p>
+                            <div class="skills__bar skills__bar--60"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">CSS</p>
+                            <div class="skills__bar skills__bar--50"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JAVASCRIPT</p>
+                            <div class="skills__bar skills__bar--40"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">Back End</h2>
+                    <div class="skills">
+                        <div class="skills__header">
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="begginer-level"
+                                >Inicial</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="intermediate-level"
+                                >Medio</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="advanced-level"
+                                >Avanzado</small
+                            >
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JAVA</p>
+                            <div class="skills__bar skills__bar--40"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JPA</p>
+                            <div class="skills__bar skills__bar--40"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">C#</p>
+                            <div class="skills__bar skills__bar--60"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">SQL SERVER</p>
+                            <div class="skills__bar skills__bar--60"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">MYSQL</p>
+                            <div class="skills__bar skills__bar--30"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <h2
+                        class="card__title"
+                        data-section="other__knowledge"
+                        data-value="other__knowledge__title"
+                    >
+                        Otros Conocimientos
+                    </h2>
+                    <div class="skills">
+                        <div class="skills__header">
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="begginer-level"
+                                >Inicial</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="intermediate-level"
+                                >Medio</small
+                            >
+                            <small
+                                class="skills__level"
+                                data-section="skills_levels"
+                                data-value="advanced-level"
+                                >Avanzado</small
+                            >
+                        </div>
+                        <div class="skills__item">
+                            <p
+                                class="skills__tech"
+                                data-section="other__knowledge"
+                                data-value="english"
+                            >
+                                INGLÉS
+                            </p>
+                            <div class="skills__bar skills__bar--60"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">GIT/GITHUB</p>
+                            <div class="skills__bar skills__bar--50"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">JSP</p>
+                            <div class="skills__bar skills__bar--40"></div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__tech">WORD</p>
+                            <div class="skills__bar skills__bar--70"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <h2 class="titles" data-section="projects" data-value="projects__title">
+                    Proyectos
+                </h2>
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img src="/assets/images/TresEnRayaApp.png" alt="TresEnRaya" />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-1-title"
+                        >
+                            Tres en Raya
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-1-description"
+                        >
+                            Página para poder jugar tres en raya, cuenta con 3 tableros y
+                            se puede jugar en teléfonos.
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://apptresenraya.netlify.app/"
+                                class="button button--primary"
+                                target="_blank"
+                                >Demo</a
+                            >
+                            <a
+                                href="https://github.com/Ripca/TresEnRaya"
+                                class="button button--ghost"
+                                target="_blank"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img src="/assets/images/MoviesRapp.png" alt="MoviesR" />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-2-title"
+                        >
+                            MoviesR
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-2-description"
+                        >
+                            Página para ver las películas de tendencia
+                        </p>
+                        <div class="buttons">
+                            <a
+                                target="_blank"
+                                href="https://moviesr.netlify.app/"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/MoviesR"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img src="assets/images/CrudApp.png" alt="crud-image" />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-3-title"
+                        >
+                            CRUD
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-3-description"
+                        >
+                            Página para hacer un CRUD utilizando la API IndexedDB del
+                            navegador
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://crudindexeddbapi.netlify.app/"
+                                target="_blank"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/CRUD"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img src="assets/images/GalleryApp.png" alt="galería" />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-4-title"
+                        >
+                            Galería
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-4-description"
+                        >
+                            Sitio tipo galería
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://galleryresponsive.netlify.app/"
+                                target="_blank"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/Gallery"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img src="assets/images/PortafolioApp.PNG" alt="portfolio " />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">#HTML</span>
+                            <span class="project__tag">#CSS</span>
+                            <span class="project__tag">#JAVASCRIPT</span>
+                            <span class="project__tag">#Responsive</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-5-title"
+                        >
+                            Portafolio
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-5-description"
+                        >
+                            Mi portafolio web, con algunos proyectos y mi informacion de
+                            contacto
+                        </p>
+                        <div class="buttons">
+                            <a
+                                href="https://ricardoarrecisportfolio.netlify.app/"
+                                target="_blank"
+                                class="button button--primary"
+                                >Demo</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/Portafolio"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            src="assets/images/SistemaDeGestionApp.png"
+                            alt="menuImage"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">C#</span>
+
+                            <span class="project__tag">WPF</span>
+                            <span class="project__tag">SQL SERVER</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-6-title"
+                        >
+                            Sistema Clientes
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-6-description"
+                        >
+                            Este es un proyecto para gestionar clientes desde una interfaz
+                            gráfica hecha con WPF y con Sql como base de datos
+                            administradora.
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/ConexionC-SqlServer"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            src="assets/images/ConsultorioApp.png"
+                            alt="ConsultorioImage"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">JAVA</span>
+                            <span class="project__tag">JSP</span>
+                            <span class="project__tag">JPA</span>
+                            <span class="project__tag">MYSQL</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-7-title"
+                        >
+                            Consultorio Dental
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-7-description"
+                        >
+                            Página tipo Sistema de Gestión para ver, modificar, eliminar o
+                            agregar usuarios, se conecta a una base de datos mediante
+                            servlets y JPA.
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/Consultorio"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            src="assets/images/CalculadoraIMCApp.png"
+                            alt="CalculadoraIMCImage"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">C#</span>
+                            <span class="project__tag">Windows Forms</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-8-title"
+                        >
+                            Calculadora IMC
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-8-description"
+                        >
+                            Calculadora que muestra el indice de masa corporal de una
+                            persona y si es saludable o no.
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/CalculadoraIMC"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--project">
+                    <div class="card__image-container">
+                        <img
+                            src="assets/images/MenuGrastronomicoApp.png"
+                            alt="menuImage"
+                        />
+                    </div>
+                    <div class="project">
+                        <div class="project__tags">
+                            <span class="project__tag">C#</span>
+
+                            <span class="project__tag">Windows Forms</span>
+                        </div>
+                        <h2
+                            class="card__title"
+                            data-section="projects"
+                            data-value="project-9-title"
+                        >
+                            Menú Gastronómico
+                        </h2>
+                        <p
+                            class="card__text"
+                            data-section="projects"
+                            data-value="project-9-description"
+                        >
+                            Mini proyecto elaborado en C# utilizando Windows forms que
+                            presenta tres menus y las comidas dependiendo del tiempo
+                            seleccionado.
+                        </p>
+                        <div class="buttons">
+                            <a target="_blank" class="button button--primary">Demo</a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/Ripca/MenuGastronomico"
+                                class="button button--ghost"
+                                data-section="button"
+                                data-value="code_button"
+                                >Código</a
+                            >
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+{
+    "profile": {
+        "rol": "Desarrollador",
+        "description": "Soy un desarrollador junior en el área del Frontend y entrando también al desarrollo de Backend. <br />Busco especializarme en las tecnologías que ya conozco y mejorar cada dia."
+    },
+    "achievements": {
+        "achievement-title": "Logros",
+        "achievement-1-date": "Mayo 2023",
+        "achievement-1-description": "Participación en la Competencia Nacional de Microsoft Office Specialist 2023 en la categoría de Microsoft Word."
+    },
+    "education": {
+        "education-title": "Educación",
+        "education-subtitle": "Ingeniería",
+        "education-description": "Estudiante del primer año de Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala."
+    },
+
+    "interests": {
+        "interests-title": "Intereses",
+        "interest-1": "Tecnología",
+        "interest-2": "Lectura",
+        "interest-3": "Deportes"
+    },
+    "skills_levels": {
+        "begginer-level": "Inicial",
+        "intermediate-level": "Medio",
+        "advanced-level": "Avanzado"
+    },
+
+    "other__knowledge": {
+        "other__knowledge__title": "Otros Conocimientos",
+        "english": "INGLÉS"
+    },
+    "projects": {
+        "projects__title": "Proyectos",
+        "project-1-title": "Tres en Raya",
+        "project-1-description": "Página para poder jugar tres en raya, cuenta con 3 tableros y se puede jugar en teléfonos.",
+        "project-2-title": "MoviesR",
+        "project-2-description": " Página para ver las películas de tendencia.",
+        "project-3-title": "CRUD",
+        "project-3-description": "Página para hacer un CRUD utilizando la API IndexedDB del navegador",
+        "project-4-title": "Galería",
+        "project-4-description": "Sitio tipo galería.",
+        "project-5-title": "Portafolio",
+        "project-5-description": "Mi portafolio web, con algunos proyectos y mi informacion de contacto.",
+        "project-6-title": "Sistema Clientes",
+        "project-6-description": "                        Este es un proyecto para gestionar clientes desde una interfaz gráfica hecha con WPF y con Sql Server como base de datos administradora.",
+        "project-7-title": "Consultorio Dental",
+        "project-7-description": "Página tipo Sistema de Gestión para ver, modificar, eliminar o agregar usuarios, se conecta a una base de datos mediante servlets y JPA.",
+        "project-8-title": "Calculadora IMC",
+        "project-8-description": "Calculadora que muestra el indice de masa corporal de una persona y si es saludable o no.",
+        "project-9-title": "Menú Gastronómico",
+        "project-9-description": "Mini proyecto elaborado en C# utilizando windows forms que presenta tres menus y las comidas dependiendo del tiempo seleccionado."
+    },
+    "button": {
+        "code_button": "Código"
+    }
+}

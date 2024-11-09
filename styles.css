@@ -1,0 +1,473 @@
+/* Declaracion de variables css a utilizar */
+:root {
+    --primary-color: #3182ed;
+    --text-color: #4f4f4f;
+    --bg-color: #e4d8d8;
+    --bg-card-color: #fafafa;
+    --transition: color 0.4s, background-color 0.2s ease-in-out;
+    --border-radius: 0.4em;
+    --skils-bar-length: 0%;
+}
+
+/* Para que ningun elemento se desborde de su contenedor */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* El display block de la imagen es para que poder asignarle luego el border radius ya que al ser por defecto inline-block no lo aplicaba completamente */
+img {
+    max-width: 100%;
+    display: block;
+}
+img:hover {
+    opacity: 75%;
+}
+/* Estilos generales del body */
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+    font-family: sans-serif;
+}
+/* Estilos al colocarle la clase dark */
+body.dark {
+    --text-color: #d4d4d4;
+    --bg-color: #262626;
+    --bg-card-color: #333333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 1.5em;
+    background-color: var(--bg-card-color);
+    transition: var(--transition);
+}
+
+.switches {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-theme__icon {
+    margin-right: 0.5em;
+    width: 20px;
+}
+
+.toggle-theme__text {
+    font-size: 0.8rem;
+}
+
+.flags {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags__item {
+    width: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 5px;
+}
+
+/* Se le coloca el color que sea el principal y un filter: brightness, para hacerlo mas claro*/
+.flags__item:hover {
+    background-color: var(--primary-color);
+    color: #fafafa;
+    filter: brightness(0.9);
+}
+
+/* Contenedor de los botones de colores*/
+.colors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 75px;
+}
+
+/* Estilos de los botones para cambiar de color principal*/
+.colors__item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.colors__item--blue {
+    --primary-color: #3182ed;
+}
+
+.colors__item--green {
+    --primary-color: #28e285;
+}
+.colors__item--purple {
+    --primary-color: #a231ed;
+}
+
+.main {
+    display: grid;
+    padding: 2em;
+    gap: 0.5em;
+}
+
+/* Media query para colocar dos columnas en cuanto alcance los 760px */
+@media screen and (min-width: 760px) {
+    .main {
+        grid-template-columns: min-content 1fr;
+    }
+}
+
+.titles {
+    color: var(--primary-color);
+}
+
+/* Ambas columnas tanto la izquierda como la derecha si esta en escritorio o laptop se tendra un display grid y una separacion de 0.5em */
+.column {
+    display: grid;
+    gap: 0.5em;
+}
+
+/* Media query para colocar dos columnas en cuanto alcance los 760px */
+@media screen and (min-width: 760px) {
+    .column--right {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+
+    .column--left {
+        gap: 3em;
+    }
+}
+/* Estilos generales para todas las cartas */
+.card {
+    max-height: 750px;
+    padding: 1em;
+    background-color: var(--bg-card-color);
+    border-radius: var(--border-radius);
+}
+
+/* Para luego centrar el contenido de las cartas expertise TODO */
+/* .card--experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+} */
+
+.experience {
+    display: flex;
+    align-self: center;
+}
+
+/* Estilos para cada contenedor de imagen */
+.card__image-container {
+    min-width: 280px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+}
+
+/* Aqui utilizamos el modificador profile para poder darle un estilo unico a la imagen del perfil */
+.card__image--profile {
+    border: 4px solid var(--primary-color);
+}
+
+.card__header {
+    padding: 1em 0;
+}
+
+.card__subtitle__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__subtitle__container a {
+    width: 50px;
+    height: 40px;
+}
+
+.card__title {
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+}
+
+.card__subtitle {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.card__link {
+    margin-bottom: 0.6em;
+}
+
+.card__link i {
+    margin-right: 0.7em;
+}
+
+.card__text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* La pantalla tiene que ser minimo de 760px para que el contenedor del proyecto utilice dos columnas para mostrarse, de lo contrario se colocara un elemento bajo el otro para que sea una sola columna */
+@media screen and (min-width: 760px) {
+    .card--project {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column: 1/-1;
+    }
+}
+/* Clase general para quitar los margin a cualquier elemento */
+.no__margin {
+    margin: 0;
+}
+
+.skills {
+    padding: 0.9em 0;
+}
+
+.skills__header {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.skills__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+
+.skills__tech {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.skills__bar,
+.skills__bar::after {
+    position: relative;
+    width: 200px;
+    height: 8px;
+    background-color: #888;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+/* Al .skills__bar le agregamos un after que es el que se va a encargar de mostrar la linea de porcentaje correspondiente */
+.skills__bar::after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+    left: -200px;
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+/* Agregamos los posibles porcentajes a generar y en cada uno llamamos a nuestra animacion para que los ejecute hasta ese punto */
+.skills__bar--10::after {
+    --skils-bar-length: 10%;
+}
+
+.skills__bar--20::after {
+    --skils-bar-length: 20%;
+}
+
+.skills__bar--30::after {
+    --skils-bar-length: 30%;
+}
+
+.skills__bar--40::after {
+    --skils-bar-length: 40%;
+}
+
+.skills__bar--50::after {
+    --skils-bar-length: 50%;
+}
+
+.skills__bar--60::after {
+    --skils-bar-length: 60%;
+}
+
+.skills__bar--70::after {
+    --skils-bar-length: 70%;
+}
+
+/* Esta media query es solo para darle un margen izquierdo al proyecto en escritorio, en mobile al ser una columna no es necesario */
+@media screen and (min-width: 760px) {
+    .project {
+        margin-left: 2em;
+    }
+}
+
+.project__tags {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    font-size: 0.7rem;
+    width: 275px;
+}
+
+/* Si estamos en escritorio o laptop hacemos mas grandes las etiquetas */
+@media screen and (min-width: 760px) {
+    .project__tags {
+        width: 425px;
+        font-size: 0.9rem;
+    }
+}
+
+.project__tag {
+    padding: 0.4em 0.8em;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transition: var(--transition);
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+}
+/* Aumentamos el tamaño de los botones y los separamos de diferente forma para que se vea mejor */
+@media screen and (min-width: 760px) {
+    .buttons {
+        width: 225px;
+        justify-content: space-between;
+    }
+}
+
+.button {
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.button--primary {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.button--primary:hover {
+    filter: brightness(0.9);
+}
+
+.button--ghost {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.button--ghost:hover {
+    filter: brightness(1.3);
+}
+
+.icon {
+    margin-right: 0.4em;
+}
+
+/* Animacion para trasladar el after hasta donde el .skills__bar-length dependiendo de donde se la llama se traslada ese porcentaje en el eje x */
+@keyframes skills-bar-fill {
+    to {
+        transform: translateX(var(--skils-bar-length));
+    }
+}
+
+.experience {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+
+    /* Esto es solo para agregarle el efecto de luz de fondo al contenedor */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 0 2px 16px 0 rgba(255, 255, 255, 0.37);
+}
+
+.experience__img {
+    max-width: 25%;
+    margin-right: 1em;
+}
+
+.experience__time {
+    font-size: 0.8rem;
+    margin-bottom: 0.5em;
+}
+
+.experience__title {
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.experience__description {
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
+}
+
+.container__social {
+    position: relative;
+    height: 100px;
+}
+
+.social {
+    position: absolute;
+    bottom: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    height: 2.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 60%;
+}
+
+.social__icon {
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social__icon a i {
+    color: var(--text-color);
+    align-self: center;
+}
+
+@media screen and (min-width: 760px) {
+    .social__icon:hover {
+        transform: translateY(-122%);
+    }
+}
